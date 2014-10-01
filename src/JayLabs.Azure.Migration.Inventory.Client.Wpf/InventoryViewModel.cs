@@ -33,6 +33,8 @@ namespace JayLabs.Azure.Migration.Inventory.Client.Wpf
         {
             var data = await _dataService.GetInventoryItemsAsync();
 
+            _inventoryItems.Clear();
+
             foreach (var item in data)
             {
                 _inventoryItems.Add(item);

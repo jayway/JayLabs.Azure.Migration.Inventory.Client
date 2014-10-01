@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+<xs:schema xmlns:ser="http://schemas.microsoft.com/2003/10/Serialization/" xmlns:tns="http://schemas.datacontract.org/2004/07/Inventory.Common" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/Inventory.Common" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import schemaLocation="http://localhost:57774/api?xsd=xsd1" namespace="http://schemas.microsoft.com/2003/10/Serialization/" />
+  <xs:complexType name="ProductView">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="IsActive" type="xs:boolean" />
+      <xs:element minOccurs="0" name="Name" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ProductView" nillable="true" type="tns:ProductView" />
+  <xs:complexType name="ArrayOfProductView">
+    <xs:sequence>
+      <xs:element minOccurs="0" maxOccurs="unbounded" name="ProductView" nillable="true" type="tns:ProductView" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ArrayOfProductView" nillable="true" type="tns:ArrayOfProductView" />
+  <xs:complexType name="CreateProductCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="Description" nillable="true" type="xs:string" />
+      <xs:element minOccurs="0" name="ProductName" nillable="true" type="xs:string" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="CreateProductCommand" nillable="true" type="tns:CreateProductCommand" />
+  <xs:complexType name="ActiveProductCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="ActiveProductCommand" nillable="true" type="tns:ActiveProductCommand" />
+  <xs:complexType name="DeActivateCommand">
+    <xs:sequence>
+      <xs:element minOccurs="0" name="ProductId" type="ser:guid" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="DeActivateCommand" nillable="true" type="tns:DeActivateCommand" />
+</xs:schema>

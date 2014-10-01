@@ -7,9 +7,9 @@
         mc:Ignorable="d"
         d:DataContext="{d:DesignInstance local:InventoryViewModel, IsDesignTimeCreatable=True}"
         Title="MainWindow" Height="800" Width="1280">
-    <Window.DataContext>
+    <!--<Window.DataContext>
         <local:InventoryViewModel/>
-    </Window.DataContext>
+    </Window.DataContext>-->
     <Grid>
         <Grid.RowDefinitions>
             <RowDefinition Height="50"/>

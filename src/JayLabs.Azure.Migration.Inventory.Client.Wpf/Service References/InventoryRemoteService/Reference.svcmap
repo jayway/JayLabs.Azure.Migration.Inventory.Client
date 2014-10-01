@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ReferenceGroup xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:xsd="http://www.w3.org/2001/XMLSchema" ID="d768bbda-1d65-4954-aa3c-5e91a59d9928" xmlns="urn:schemas-microsoft-com:xml-wcfservicemap">
+  <ClientOptions>
+    <GenerateAsynchronousMethods>false</GenerateAsynchronousMethods>
+    <GenerateTaskBasedAsynchronousMethod>true</GenerateTaskBasedAsynchronousMethod>
+    <EnableDataBinding>true</EnableDataBinding>
+    <ExcludedTypes />
+    <ImportXmlTypes>false</ImportXmlTypes>
+    <GenerateInternalTypes>false</GenerateInternalTypes>
+    <GenerateMessageContracts>false</GenerateMessageContracts>
+    <NamespaceMappings />
+    <CollectionMappings />
+    <GenerateSerializableTypes>true</GenerateSerializableTypes>
+    <Serializer>Auto</Serializer>
+    <UseSerializerForFaults>true</UseSerializerForFaults>
+    <ReferenceAllAssemblies>false</ReferenceAllAssemblies>
+    <ReferencedAssemblies>
+      <ReferencedAssembly AssemblyName="Inventory.Common" />
+    </ReferencedAssemblies>
+    <ReferencedDataContractTypes />
+    <ServiceContractMappings />
+  </ClientOptions>
+  <MetadataSources>
+    <MetadataSource Address="http://localhost:57774/api" Protocol="http" SourceId="1" />
+  </MetadataSources>
+  <Metadata>
+    <MetadataFile FileName="api.xsd" MetadataType="Schema" ID="1f616a57-a7e7-4f9c-9eb2-4085539d9962" SourceId="1" SourceUrl="http://localhost:57774/api?xsd=xsd1" />
+    <MetadataFile FileName="InventoryService.wsdl" MetadataType="Wsdl" ID="260ac972-4744-41bd-9913-5ca5a6d70418" SourceId="1" SourceUrl="http://localhost:57774/api?wsdl" />
+    <MetadataFile FileName="api1.xsd" MetadataType="Schema" ID="4a87f1bc-c697-4672-9cd4-95e41cbd3e4b" SourceId="1" SourceUrl="http://localhost:57774/api?xsd=xsd0" />
+    <MetadataFile FileName="api.disco" MetadataType="Disco" ID="ff3324d9-f083-4864-bfc5-0de0253ec566" SourceId="1" SourceUrl="http://localhost:57774/api?disco" />
+    <MetadataFile FileName="api2.xsd" MetadataType="Schema" ID="cbd18b36-0786-4768-9f29-ef1d9a471247" SourceId="1" SourceUrl="http://localhost:57774/api?xsd=xsd2" />
+  </Metadata>
+  <Extensions>
+    <ExtensionFile FileName="configuration91.svcinfo" Name="configuration91.svcinfo" />
+    <ExtensionFile FileName="configuration.svcinfo" Name="configuration.svcinfo" />
+  </Extensions>
+</ReferenceGroup>
